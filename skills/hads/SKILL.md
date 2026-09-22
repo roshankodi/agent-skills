@@ -54,7 +54,7 @@ Block tag rules:
 # Document Title
 **Version X.Y.Z** · Author · Date · [metadata]
 
----
+  ---
 
 ## AI READING INSTRUCTION
 
@@ -76,7 +76,7 @@ Required elements in order:
 3. AI manifest section before first content section
 4. Content sections (H2), subsections (H3)
 
----
+  ---
 
 ## 4. HOW CLAUDE READS HADS
 
@@ -90,7 +90,7 @@ When encountering a HADS document:
 
 Token optimization: for large documents, scan section headings first, then read only `[SPEC]` and `[BUG]` blocks in relevant sections.
 
----
+  ---
 
 ## 5. HOW CLAUDE GENERATES HADS
 
@@ -120,7 +120,7 @@ Content rules for `[BUG]`:
 **[NOTE]**
 When converting existing documentation to HADS: extract facts into `[SPEC]`, move narrative and history to `[NOTE]`, surface all known issues as `[BUG]`. Do not duplicate content between block types.
 
----
+  ---
 
 ## 6. VALIDATION RULES
 
@@ -134,7 +134,7 @@ A valid HADS document must have:
 
 Validator: *(planned — not yet included in this release)*
 
----
+  ---
 
 ## 7. EXAMPLE INTERACTIONS
 
@@ -155,7 +155,7 @@ User: *"Summarize this HADS document"*
 User: *"What does this API do?"* (HADS doc provided)
 → Read manifest, read [SPEC] blocks in relevant sections, answer directly
 
----
+  ---
 
 ## 8. DESIGN INTENT
 
@@ -166,7 +166,7 @@ Key insight: the AI manifest is the core innovation. It lets even small (7B) mod
 
 When generating HADS, think of `[SPEC]` as the API surface and `[NOTE]` as the comments. `[BUG]` blocks are the most valuable content — they represent hard-won knowledge that saves others from hitting the same wall.
 
----
+  ---
 
 ## 9. QUICK REFERENCE
 

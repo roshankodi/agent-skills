@@ -85,7 +85,7 @@ mc_score = 0.40 × activation_rate
 
 where `efficiency_norm = max(0, 1 − median_tokens / 8000)`.
 
----
+  ---
 
 ## Composite Scoring Formula
 
@@ -144,7 +144,7 @@ blended[d] = Σ( layer_weight[d][layer] × layer_score[d][layer] )
 This normalization ensures that skipping Monte Carlo at standard depth doesn't artificially
 deflate scores.
 
----
+  ---
 
 ## Interpreting Dimension Scores
 
@@ -166,7 +166,7 @@ A D in `triggering_accuracy` (weight 0.25) costs far more than a D in `ecosystem
 points) indicate stable scores. Wide CIs suggest inconsistency — often caused by an ambiguous
 description or instructions that work for some prompt styles but not others.
 
----
+  ---
 
 ## Quality Badges
 
@@ -184,7 +184,7 @@ The `Badge.from_scores()` logic checks composite first, then Elo if provided:
 The Elo threshold is skipped when Elo has not been computed (i.e., at quick or standard depth
 without `certify`). A skill can earn a badge on composite score alone in those cases.
 
----
+  ---
 
 ## Anti-Pattern Flags
 
@@ -416,7 +416,7 @@ if (( $(echo "$score < 70" | bc -l) )); then
 fi
 ```
 
----
+  ---
 
 ## Tips for Improving a Skill's Score
 
@@ -497,7 +497,7 @@ more composite-score gain per hour than all low-weight dimensions combined.
 - Add a "## Related" section listing sibling skills or agents with relative paths.
 - Avoid duplicating content that already exists in another skill — link to it instead.
 
----
+  ---
 
 ## Troubleshooting
 

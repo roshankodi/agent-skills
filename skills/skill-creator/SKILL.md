@@ -606,12 +606,12 @@ When an Azure SDK has been deprecated or rebranded, update skills to guide users
 ### Example: Azure SDK Skill Structure
 
 ```markdown
----
+  ---
 name: skill-creator
 description: |
   Azure AI Example SDK for Python. Use for [specific service features].
   Triggers: "example service", "create example", "list examples".
----
+  ---
 
 # Azure AI Example SDK
 
@@ -806,7 +806,7 @@ Skills are organized by **language** and **product area** in the `skills/` direc
 **Frontmatter (Enhanced with Benchmarking Metadata):**
 
 ```yaml
----
+  ---
 name: azure-service-py
 description: |
   Azure Service SDK for Python. Use for [specific features].
@@ -819,7 +819,7 @@ metadata:
   benchmark_quality_examples_focused: "true"
   benchmark_quality_no_prose_bloat: "true"
   benchmark_quality_anti_patterns_checked: "true"
----
+  ---
 ```
 
 **Metadata fields:** (all values are strings, per the Agent Skills `metadata` spec — string keys mapped to string values)
@@ -887,7 +887,7 @@ ls -la skills/python/foundry/agents
 **Repository**: https://github.com/Azure/azure-sdk-for-<language>
 **Purpose**: Skill testing acceptance criteria
 
----
+  ---
 
 ## 1. Correct Import Patterns
 
